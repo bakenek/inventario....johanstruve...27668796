@@ -1,0 +1,113 @@
+body {
+	font-family: Verdana, sans-serif; font-size:0.8em;
+	padding:0;
+	margin:0;
+	}
+section, article, footer
+    {border:1px solid grey; margin:5px; padding:8px;}
+/*
+nav ul {margin:0; padding:0;}
+nav ul li {display:inline; margin:5px;}
+*/
+
+/*colores
+azul rgb(0, 102, 102)
+gris rgb(51, 77, 77)
+verde rgb(133,181,1)
+*/
+
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	/*background: #ff3300;*/
+	background: rgb(133,181,1);
+}
+
+ul li {
+	display: block;
+	position: relative;
+	float: left;
+	/*background: #ff3300;*/
+	background: rgb(133,181,1);
+}
+/*The CSS to hide the sub menus.*/
+
+li ul { display: none; }
+ul li a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	white-space: nowrap;
+	color: #fff;
+}
+
+ul li a:hover { background: #2c3e50; }
+/*Displays the dropdown menu on hover.*/
+
+li:hover > ul {
+	display: block;
+	position: absolute;
+}
+
+li:hover li { float: none; }
+/*li:hover a { background: #ff3300; }*/
+li:hover a { background: rgb(133,181,1); }
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+/*Displays second level dropdown menus to the right of the first level dropdown menu.*/
+ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+/*Simple clearfix.
+view source*/
+ul:before,
+ul:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+ul:after { clear: both; }
+
+
+
+p {
+	margin:0;
+	padding:0;	
+}
+	  
+summary{
+	cursor:pointer;
+	background-color:#333;
+	color:#FFF;
+}
+
+.encabezado{
+	width:100%;
+	height:100px;
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+.header{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	font-size:36px;
+	text-align:left;
+	/*background-image:url(../imgs/fondoheader.jpg);*/
+	background-color:rgb(0, 102, 102);
+	color:#FFF;
+	background-size:cover;
+	padding:0 0 0 10px;
+}
+
+
+.cuerpo{
+	padding:100px 0 0 0;	
+}	
